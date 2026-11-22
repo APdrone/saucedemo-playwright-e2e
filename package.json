@@ -1,0 +1,35 @@
+{
+  "name": "sauce-lab-demo-e2e",
+  "version": "1.0.0",
+  "description": "Senior QA Automation Framework using Playwright & TypeScript for SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "install:browsers": "playwright install",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "qa-automation",
+    "e2e-testing",
+    "page-object-model",
+    "saucedemo"
+  ],
+  "author": "Aman Patwal",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^22.13.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.3"
+  }
+}
